@@ -1,19 +1,16 @@
 name: Build Mod
-
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
 jobs:
   build:
     name: Build Mod
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: geode-sdk/build-action@v1
+      - uses: geode-sdk/build-action@main # BU SATIR DEĞİŞTİ
         with:
           target: all
           token: ${{ secrets.GITHUB_TOKEN }}
-
