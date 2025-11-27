@@ -1,22 +1,26 @@
 #include <Geode/Geode.hpp>
-using namespace geode::prelude;
-
 #include <Geode/modify/MenuLayer.hpp>
 
-// Ana Menüyü (MenuLayer) değiştiriyoruz
+using namespace geode::prelude;
+
+// Oyunun Ana Menüsüne (MenuLayer) müdahale ediyoruz
 class $modify(MenuLayer) {
-    bool init() {
-        if (!MenuLayer::init()) {
-            return false;
-        }
+	
+        // Menü başladığında çalışacak fonksiyon
+        	bool init() {
+                    // Orijinal menüyü yükle, hata varsa dur
+                    		if (!MenuLayer::init()) {
+                            			return false;
+                                        		}
 
-        // Mod yüklendiğinde ekrana bir uyarı kutusu çıkart
-        FLAlertLayer::create(
-            "Basarili!",
-            "Merhaba emirontop1, modun calisiyor!",
-            "Tamam"
-        )->show();
+                                                        // Ekrana bir uyarı kutusu (Alert) çıkar
+                                                        		FLAlertLayer::create(
+                                                                			"Tebrikler!",      // Başlık
+                                                                            			"Mobilden ilk modunu basariyla yaptin.", // Mesaj
+                                                                                        			"Tamam"            // Buton yazısı
+                                                                                                    		)->show();
 
-        return true;
-    }
-};
+                                                                                                            		return true;
+                                                                                                                    	}
+                                                                                                                        };
+                                                                                                                        

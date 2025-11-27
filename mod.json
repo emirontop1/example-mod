@@ -1,17 +1,17 @@
 {
-	"geode": "3.0.0-beta.1",
-	"gd": {
-		"win": "2.2074",
-		"android": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074"
-	},
-	"id": "emirontop1.ilk-mod-menu",
-	"name": "Ilk Mod Menu",
-	"version": "v1.0.0",
-	"developer": "emirontop1",
-	"description": "Mobilden yapilan ilk mod denemesi.",
-	"dependencies": {
-		"geode.node-ids": ">=v1.20.0"
-	}
+		"geode": "4.0.0",
+			"version": "v1.0.0",
+				"id": "senin-adin.ilk-mod",
+					"name": "Merhaba Modu",
+						"developer": "Sen",
+							"description": "Oyuna giriste mesaj gosterir.",
+								"dependencies": [
+										{
+													"id": "geode.node-ids",
+																"version": ">=1.0.0",
+																			"importance": "suggested"
+																					}
+																						]
+																						}
+																						
 }
